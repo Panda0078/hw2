@@ -272,7 +272,6 @@ puts ""
 
 movies = Movie.all
 
-
 for movie in movies
     director = People.where({id: movie.person_id}) [0]
     puts "#{movie.title} #{movie.year_released} #{movie.rated} #{director.name}"
